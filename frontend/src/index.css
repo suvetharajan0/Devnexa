@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+/*
+  Devnexa design tokens. Dark mode works by overriding the SAME variable
+  names under a `.dark` class on <html> — every utility class that already
+  uses these tokens (bg-surface-page, text-ink-900, etc.) automatically
+  flips colors with zero per-component changes needed.
+*/
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+
+  --color-brand-50: #f2f3ff;
+  --color-brand-100: #eaddff;
+  --color-brand-200: #dad6ff;
+  --color-brand-300: #d2bbff;
+  --color-brand-500: #7c3aed;
+  --color-brand-600: #630ed4;
+  --color-brand-700: #5d5b7e;
+
+
+  --color-ink-900: #131b2e;
+  --color-ink-600: #4a4455;
+  --color-ink-400: #7b7487;
+
+
+  --color-sidebar-900: #4c1d95;
+  --color-sidebar-text: rgba(238, 240, 255, 0.7);
+
+
+  --color-surface-page: #faf8ff;
+  --color-surface-card: #ffffff;
+  --color-surface-muted: #f2f3ff;
+  --color-border-subtle: #eaedff;
+  --color-border-muted: #e2e7ff;
+
+
+  --color-success-bg: #6ffbbe;
+  --color-success-text: #007650;
+  --color-danger-500: #dc2626;
+
+
+  --radius-card: 1rem;
+  --radius-control: 0.75rem;
+}
+
+
+.dark {
+  --color-brand-100: #3a2a5c;
+  --color-brand-500: #9061f9;
+  --color-brand-600: #a78bfa;
+
+
+  --color-ink-900: #f4f3ff;
+  --color-ink-600: #b8b3c7;
+  --color-ink-400: #8b859c;
+
+
+  --color-sidebar-900: #241a3d;
+
+
+  --color-surface-page: #14101f;
+  --color-surface-card: #1e1830;
+  --color-surface-muted: #241d3a;
+  --color-border-subtle: #2f2748;
+  --color-border-muted: #362d52;
+
+
+  --color-success-bg: #0f3d2c;
+  --color-success-text: #4ade80;
+  --color-danger-500: #f87171;
+}
+
+
+body {
+  @apply bg-surface-page text-ink-900 antialiased transition-colors duration-200;
+  font-family: var(--font-sans);
+}
+
