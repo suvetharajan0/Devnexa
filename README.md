@@ -22,7 +22,7 @@ Built as an end-to-end portfolio project: authentication, project discovery, tea
 |---|---|
 | ![Team workspace](./screenshots/team-workspace.jpg) | ![Messages](./screenshots/messages.jpg) |
 
-| Code Mentor AI | Settings |
+| Code Mentor AI | Applications |
 |---|---|
 | ![Code Mentor AI](./screenshots/code-mentor.jpg) | ![Applications](./screenshots/Applications.jpg) |
 
