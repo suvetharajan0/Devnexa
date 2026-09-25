@@ -124,12 +124,12 @@ npm install
 Create a `.env` file in `backend/`:
 ```env
 NODE_ENV=development
-PORT=5000
+PORT=Port Number 
 
-MONGODB_URI=mongodb://127.0.0.1:27017/devnexa
+MONGODB_URI=mongodb://127.0.0.1:27017/database name
 
 JWT_SECRET=replace-with-a-long-random-secret
-JWT_EXPIRES_IN=7d
+JWT_EXPIRES_IN=Time
 COOKIE_NAME=your-token-name
 
 CLIENT_URL=http://localhost:5173
