@@ -24,7 +24,7 @@ Built as an end-to-end portfolio project: authentication, project discovery, tea
 
 | Code Mentor AI | Settings |
 |---|---|
-| ![Code Mentor AI](./screenshots/code-mentor.jpg) | ![Settings](./screenshots/applications.jpg) |
+| ![Code Mentor AI](./screenshots/code-mentor.jpg) | ![Applications](./screenshots/Applications.jpg) |
 
 ---
 
